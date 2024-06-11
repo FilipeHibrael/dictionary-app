@@ -11,6 +11,7 @@
   border-radius: 16px;
   position: relative;
   cursor: pointer;
+  transition: background 0.2s ease-in-out;
 }
 
 .toggleButton::after {
@@ -22,4 +23,21 @@
   position: absolute;
   top: 4px;
   left: 4px;
+  transition: left 0.2s ease-in-out;
+}
+
+.toggleContainer.active .toggleButton {
+  background-color: var(--color-p);
+}
+
+.toggleContainer.active .toggleButton::after {
+  left: 28px;
+}
+
+.toggleContainer svg {
+  transition: stroke 0.2s ease-in-out;
+}
+
+.toggleContainer.active svg path {
+  stroke: var(--color-p);
 }
