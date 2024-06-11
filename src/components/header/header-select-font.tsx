@@ -2,6 +2,7 @@
 import ArrowDownIcon from '@/icons/arrow-down-icon';
 import styles from './header-select-font.module.css';
 import React from 'react';
+import { useOutsideClick } from '@/hooks/use-outside-click';
 
 const FONT_TYPES = ['sans-serif', 'serif', 'mono'];
 
@@ -19,8 +20,10 @@ export default function HeaderSelectFont() {
     document.body.classList.add(currentFont);
   }, [currentFont]);
 
+  const ref = useOutsideClick(() => setOpenMenu(!openMenu));
+
   return (
-    <div className={styles.selectContainer}>
+    <div className={styles.selectContainer} ref={openMenu ? ref : null}>
       <div
         className={`${styles.select} ${openMenu ? styles.active : ''}`}
         onClick={() => setOpenMenu(!openMenu)}
