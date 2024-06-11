@@ -1,5 +1,9 @@
+import Header from '@/components/header/header';
+
 export default function Home() {
   return (
-    <main><h1>Dictionary App</h1></main>
+    <main className='container'>
+      <Header />
+    </main>
   );
 }
