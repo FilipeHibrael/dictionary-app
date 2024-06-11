@@ -8,6 +8,19 @@
   --color-p: hsl(274, 82%, 60%);
 }
 
+body,
+body.sans-serif {
+  font-family: var(--type-inter);
+}
+
+body.serif {
+  font-family: var(--type-lora);
+}
+
+body.mono {
+  font-family: var(--type-inconsolata);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -17,4 +30,8 @@
   max-width: 720px;
   padding: 20px;
   margin: 0 auto;
+}
+
+ul {
+  list-style: none;
 }
