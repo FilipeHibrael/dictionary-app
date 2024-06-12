@@ -34,7 +34,8 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  width: 120px;
+  background: var(--color-n-100);
+  width: 160px;
   padding: 12px;
   border: 2px solid var(--color-n-300);
   border-radius: 12px;
@@ -46,6 +47,7 @@
   transform: translateY(-12px);
   transition-property: opacity, transform;
   transition: 0.2s ease-in-out;
+  z-index: 100;
 }
 
 .selectMenu.active {

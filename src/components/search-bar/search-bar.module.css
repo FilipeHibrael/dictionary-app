@@ -1,0 +1,38 @@
+.form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.input {
+  font: inherit;
+  background: var(--color-n-200);
+  width: 100%;
+  padding: 24px 64px 24px 18px;
+  border: none;
+  border-radius: 12px;
+}
+
+.input:focus {
+  outline-color: var(--color-p);
+}
+
+.input::placeholder {
+  color: var(--color-n-400);
+}
+
+.searchIcon {
+  background: transparent;
+  width: 36px;
+  height: 36px;
+  border: none;
+  position: absolute;
+  right: 16px;
+  cursor: pointer;
+}
+
+.searchIcon svg {
+  width: 24px;
+  height: 24px;
+}
