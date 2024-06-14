@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.word {
+  margin-bottom: 8px;
+}
+
+.text {
+  color: var(--color-p);
+  font-weight: 700;
+}
+
+.play {
+  cursor: pointer;
+}

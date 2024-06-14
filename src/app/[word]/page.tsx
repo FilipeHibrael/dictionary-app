@@ -1,5 +1,6 @@
 import Loading from '@/components/helper/loading';
 import SearchBar from '@/components/search-bar/search-bar';
+import WordContent from '@/components/word-content/word-content';
 import { Suspense } from 'react';
 
 type WordParams = {
@@ -13,7 +14,7 @@ export default async function WordPage({ params }: WordParams) {
     <main>
       <SearchBar />
       <Suspense fallback={<Loading />}>
-        <p>{params.word}</p>
+        <WordContent word={params.word} />
       </Suspense>
     </main>
   );
