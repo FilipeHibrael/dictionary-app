@@ -34,7 +34,7 @@
   left: 28px;
 }
 
-.toggleContainer svg {
+.toggleContainer svg path {
   transition: stroke 0.2s ease-in-out;
 }
 

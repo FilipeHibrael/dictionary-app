@@ -1,4 +1,3 @@
-import Header from '@/components/header/header';
 import Loading from '@/components/helper/loading';
 import SearchBar from '@/components/search-bar/search-bar';
 import { Suspense } from 'react';
@@ -11,8 +10,7 @@ type WordParams = {
 
 export default async function WordPage({ params }: WordParams) {
   return (
-    <main className="container">
-      <Header />
+    <main>
       <SearchBar />
       <Suspense fallback={<Loading />}>
         <p>{params.word}</p>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { TypeInconsolata, TypeInter, TypeLora } from '@/functions/fonts';
+import Header from '@/components/header/header';
 
 export const metadata: Metadata = {
   title: 'Dictionary App',
@@ -16,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={fontsVariables}>{children}</body>
+      <body className={`${fontsVariables} container`}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
