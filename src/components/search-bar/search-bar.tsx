@@ -20,7 +20,7 @@ export default function SearchBar() {
         Word
       </label>
       <input
-        className={styles.input}
+        className={`${styles.input} font-sm`}
         name="word"
         id="word"
         type="text"
