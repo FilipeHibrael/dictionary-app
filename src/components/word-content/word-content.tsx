@@ -22,8 +22,8 @@ export default async function WordContent({ word }: { word: string }) {
             <span>Source</span>
             <a target="_blank" href={wordData.sourceUrls[0]}>
               {wordData.sourceUrls[0]}
+              <NewWindowIcon />
             </a>
-            <NewWindowIcon />
           </div>
         </div>
       ))}

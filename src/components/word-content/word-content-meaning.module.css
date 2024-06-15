@@ -46,3 +46,9 @@
 body:global(.dark-mode) .partOfSpeech::after {
   background-color: var(--color-n-500);
 }
+
+@media (max-width: 420px) {
+  .definitions li {
+    margin-left: 18px;
+  }
+}

@@ -6,6 +6,7 @@
 }
 
 .source {
+  display: flex;
   font-size: 1rem;
   border-top: 2px solid var(--color-n-200);
   padding-top: 8px;
@@ -19,7 +20,11 @@
 .source a {
   text-decoration: none;
   color: inherit;
-  margin-right: 6px;
+  word-break: break-all;
+}
+
+.source a svg {
+  margin-left: 6px;
 }
 
 .source a:hover {

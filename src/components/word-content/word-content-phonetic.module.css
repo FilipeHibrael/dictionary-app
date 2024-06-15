@@ -16,3 +16,14 @@
 .play {
   cursor: pointer;
 }
+
+@media (max-width: 420px) {
+  .word {
+    margin-bottom: 4px;
+  }
+
+  .play svg {
+    width: 58px;
+    height: 58px;
+  }
+}

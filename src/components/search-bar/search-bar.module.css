@@ -45,3 +45,12 @@ body:global(.dark-mode) .input {
   background-color: var(--color-n-500);
   color: var(--color-n-100);
 }
+
+@media (max-width: 420px) {
+  .form {
+    margin-bottom: 16px;
+  }
+  .input {
+    padding: 16px 64px 16px 18px;
+  }
+}
