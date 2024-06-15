@@ -41,3 +41,8 @@
   top: 8px;
   left: -18px;
 }
+
+/* dark mode */
+body:global(.dark-mode) .partOfSpeech::after {
+  background-color: var(--color-n-500);
+}

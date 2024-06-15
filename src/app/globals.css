@@ -22,6 +22,12 @@ body.mono {
   font-family: var(--type-inconsolata);
 }
 
+/* dark mode */
+body.dark-mode {
+  background-color: var(--color-n-600);
+  color: var(--color-n-100);
+}
+
 /* typography */
 .font-xl {
   font-size: 4rem;

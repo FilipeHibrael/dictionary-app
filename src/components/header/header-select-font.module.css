@@ -64,3 +64,9 @@
 .selectMenu li.active {
   color: var(--color-p);
 }
+
+/* dark mode */
+body:global(.dark-mode) .selectMenu {
+  border-color: var(--color-p);
+  background: var(--color-n-500);
+}

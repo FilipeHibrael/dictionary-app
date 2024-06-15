@@ -16,7 +16,9 @@
 }
 
 .input:focus {
-  outline-color: var(--color-p);
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 2px solid var(--color-p);
 }
 
 .input::placeholder {
@@ -36,4 +38,10 @@
 .searchIcon svg {
   width: 24px;
   height: 24px;
+}
+
+/* dark mode */
+body:global(.dark-mode) .input {
+  background-color: var(--color-n-500);
+  color: var(--color-n-100);
 }

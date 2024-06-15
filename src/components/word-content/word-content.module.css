@@ -7,21 +7,30 @@
 
 .source {
   font-size: 1rem;
-  color: var(--color-n-400);
   border-top: 2px solid var(--color-n-200);
   padding-top: 8px;
 }
 
 .source span {
+  color: var(--color-n-400);
   margin-right: 24px;
 }
 
 .source a {
   text-decoration: none;
-  color: var(--color-n-500);
+  color: inherit;
   margin-right: 6px;
 }
 
 .source a:hover {
   text-decoration: underline;
+}
+
+/* dark mode */
+body:global(.dark-mode) .source {
+  border-color: var(--color-n-500);
+}
+
+body:global(.dark-mode) .source a {
+  color: var(--color-n-400);
 }
