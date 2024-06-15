@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  align-items: first baseline;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.wordList {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  row-gap: 4px;
+  color: var(--color-p);
+  font-weight: 700;
+}
+
+.wordList li {
+  cursor: pointer;
+}
+
+.wordList li::after {
+  content: ',';
+}
+
+.wordList li:last-child::after {
+  content: '';
+}

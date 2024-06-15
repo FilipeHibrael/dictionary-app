@@ -1,5 +1,6 @@
 import { Meaning } from '@/types/word-data';
 import styles from './word-content-meaning.module.css';
+import WordContentSynonyms from './word-content-synonyms';
 
 export default function WordContentMeaning({ meaning }: { meaning: Meaning }) {
   return (
@@ -18,6 +19,12 @@ export default function WordContentMeaning({ meaning }: { meaning: Meaning }) {
           </li>
         ))}
       </ul>
+      {meaning.synonyms?.length ? (
+        <WordContentSynonyms synonyms wordList={meaning.synonyms} />
+      ) : null}
+      {meaning.antonyms?.length ? (
+        <WordContentSynonyms wordList={meaning.antonyms} />
+      ) : null}
     </div>
   );
 }
