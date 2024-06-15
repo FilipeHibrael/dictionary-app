@@ -1,0 +1,27 @@
+.container,
+.meaningsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.source {
+  font-size: 1rem;
+  color: var(--color-n-400);
+  border-top: 2px solid var(--color-n-200);
+  padding-top: 8px;
+}
+
+.source span {
+  margin-right: 24px;
+}
+
+.source a {
+  text-decoration: none;
+  color: var(--color-n-500);
+  margin-right: 6px;
+}
+
+.source a:hover {
+  text-decoration: underline;
+}

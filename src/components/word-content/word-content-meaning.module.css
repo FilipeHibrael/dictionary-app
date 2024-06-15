@@ -9,8 +9,8 @@
 
 .partOfSpeech::after {
   content: '';
-  background: var(--color-n-300);
-  height: 1px;
+  background: var(--color-n-200);
+  height: 2px;
   width: 100%;
 }
 
