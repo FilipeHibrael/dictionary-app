@@ -1,0 +1,43 @@
+.partOfSpeech {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-style: italic;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.partOfSpeech::after {
+  content: '';
+  background: var(--color-n-300);
+  height: 1px;
+  width: 100%;
+}
+
+.subtitle {
+  display: block;
+  color: var(--color-n-400);
+  margin-bottom: 16px;
+}
+
+.definitions {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.definitions li {
+  margin-left: 36px;
+  position: relative;
+}
+
+.definitions li::before {
+  content: '';
+  background: var(--color-p);
+  width: 5px;
+  height: 5px;
+  border-radius: 4px;
+  position: absolute;
+  top: 8px;
+  left: -18px;
+}
