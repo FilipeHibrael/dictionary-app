@@ -3,11 +3,12 @@ import WordContentPhonetic from './word-content-phonetic';
 import WordContentMeaning from './word-content-meaning';
 import styles from './word-content.module.css';
 import NewWindowIcon from '@/icons/new-window-icon';
+import NotFound from '../helper/not-found';
 
 export default async function WordContent({ word }: { word: string }) {
   const { data } = await wordGet(word);
 
-  if (!data) return null;
+  if (!data) return <NotFound />;
   return (
     <section className={styles.container}>
       <WordContentPhonetic word={data[0].word} phonetics={data[0].phonetics} />

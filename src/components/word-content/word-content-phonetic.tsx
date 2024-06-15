@@ -31,10 +31,12 @@ export default function WordContentPhonetic({ word, phonetics }: TypeParams) {
           {currentPhonetic?.text}
         </span>
       </div>
-      <div className={styles.play} onClick={playAudio}>
-        <PlayIcon />
-        <audio ref={audioRef} src={currentPhonetic?.audio} />
-      </div>
+      {currentPhonetic?.audio && (
+        <div className={styles.play} onClick={playAudio}>
+          <PlayIcon />
+          <audio ref={audioRef} src={currentPhonetic?.audio} />
+        </div>
+      )}
     </div>
   );
 }
